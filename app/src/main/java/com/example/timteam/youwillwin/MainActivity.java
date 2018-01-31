@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView button_Calendar;
     ImageView button_favorites;
     ImageView button_menu;
+    ImageView status;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         button_Calendar =findViewById(R.id.button_calendar);
         button_favorites=findViewById(R.id.button_favorites);
         button_menu=findViewById(R.id.button_menu);
+        status = findViewById(R.id.status);
     }
 
 
