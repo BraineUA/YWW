@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">You Will Win</string>
+    <string name="changeDay">Выберите день</string>
 </resources>
