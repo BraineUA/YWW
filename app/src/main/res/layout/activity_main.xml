@@ -15,10 +15,10 @@
         android:layout_centerVertical="true">
 
         <ImageView
-            android:id="@+id/status"
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/tree"/>
+            />
 
     </RelativeLayout>
 
@@ -32,6 +32,7 @@
         <com.like.LikeButton
             app:icon_type="heart"
             app:icon_size="45dp"
+            app:liked="false"
             android:id="@+id/star_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
