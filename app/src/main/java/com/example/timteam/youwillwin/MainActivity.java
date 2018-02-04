@@ -3,7 +3,6 @@ package com.example.timteam.youwillwin;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -13,8 +12,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends MyNotificationActivity {
     ImageView button_Calendar;
     ImageView button_favorites;
     ImageView button_menu;
@@ -51,5 +49,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickMenu(View view) {
+        showNotification(view);
+
+
+
     }
 }

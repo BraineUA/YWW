@@ -2,35 +2,57 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/myDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:text="@string/changeDay"
-        android:textAlignment="center"
-        android:textColor="#0e0e0e"
-        android:textSize="28sp" />
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/relativeLayout2">
+      <CalendarView
+          android:id="@+id/Calendar"
+          android:layout_width="match_parent"
+          android:layout_height="295dp"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true">
 
-    <LinearLayout
-        android:background="@drawable/bg_calen"
-        android:layout_marginTop="110dp"
-        android:layout_marginLeft="44dp"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="44dp">
+      </CalendarView>
 
-        <CalendarView
-            android:layout_width="wrap_content"
-            android:layout_height="320dp"
-            android:layout_gravity="center">
 
-        </CalendarView>
+  </RelativeLayout>
 
-    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/CalendarImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/CalendarImage"
+            android:layout_marginTop="30dp">
+
+            <com.like.LikeButton
+                app:icon_type="heart"
+                app:icon_size="45dp"
+                app:liked="false"
+                android:id="@+id/star_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
 
 </RelativeLayout>
