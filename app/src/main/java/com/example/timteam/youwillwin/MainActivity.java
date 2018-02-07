@@ -14,6 +14,7 @@ import com.like.LikeButton;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -36,19 +37,7 @@ public class MainActivity extends MyNotificationActivity {
         button_menu = findViewById(R.id.button_menu);
         imageView = findViewById(R.id.imageView);
 
-        mDBHelper = new DatabaseHelper(this);
 
-        try {
-            mDBHelper.updateDataBase();
-        } catch (IOException mIOException) {
-            throw new Error("UnableToUpdateDatabase");
-        }
-
-        try {
-            mDb = mDBHelper.getWritableDatabase();
-        } catch (SQLException mSQLException) {
-            throw mSQLException;
-        }
 
 
         String month = new SimpleDateFormat("MMMM", Locale.ENGLISH).format(new Date());
@@ -62,17 +51,9 @@ public class MainActivity extends MyNotificationActivity {
     }
 
     public void clickFav(View view) {
+        Intent intent_fav = new Intent(this, GalleryActivity.class);
+        startActivity(intent_fav);
 
-//        String item = "";
-//
-//        Cursor cursor = mDb.rawQuery("SELECT * FROM images WHERE favorite = 1", null);
-//        cursor.moveToFirst();
-//        while (!cursor.isAfterLast()) {
-//            item += cursor.getString(1) + "  " + cursor.getString(2);
-//            cursor.moveToNext();
-//        }
-//        cursor.close();
-//
 //        Toast.makeText(this, item, Toast.LENGTH_SHORT).show();
 
     }

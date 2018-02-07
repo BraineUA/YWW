@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">You Will Win</string>
     <string name="changeDay">Выберите день</string>
+    <string name="name">january_1</string>
+    <string name="title1">God of War Ascension</string>
+    <string name="title2">Assassin\'s Creed III</string>
+    <string name="title3">Hitman Absolution</string>
+    <string name="title4">Dishonored</string>
 </resources>
