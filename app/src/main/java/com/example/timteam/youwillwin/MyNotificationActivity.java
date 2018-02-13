@@ -1,6 +1,7 @@
 package com.example.timteam.youwillwin;
 
 import android.app.Activity;
+import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -10,6 +11,8 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
+
+import java.util.Calendar;
 
 /**
  * Created by TimTeam on 04.02.2018.
@@ -21,10 +24,17 @@ public class MyNotificationActivity extends Activity {
     public final int NOTIFICATION_ID = 127;
     public View view;
 
+
+
+
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         nm =(NotificationManager) getApplicationContext().getSystemService(Context.NOTIFICATION_SERVICE);
+
     }
 
     public void showNotification(View view){
@@ -40,15 +50,17 @@ public class MyNotificationActivity extends Activity {
                 .setTicker("Новое уведомление")
                 .setWhen(System.currentTimeMillis())
                 .setAutoCancel(true)
-                .setContentTitle("Уведомление")
-                .setContentText("Нажмите чтобы узнать ");
+                .setContentTitle("You Will Win")
+                .setContentText("Есть мотивация, а значит ты победишь!");
         Notification notification = builder.build();
         notification.defaults = Notification.DEFAULT_ALL;
         nm.notify(NOTIFICATION_ID,notification);
+
+    }
 
 
 
 
     }
 
-}
+

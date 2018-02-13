@@ -32,7 +32,8 @@
         <com.like.LikeButton
             app:icon_type="heart"
             app:icon_size="45dp"
-            app:liked="false"
+            app:liked="true"
+            app:is_enabled="true"
             android:id="@+id/star_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:id="@+id/linearLayout"
         android:background="@color/colorPrimary">

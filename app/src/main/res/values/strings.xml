@@ -6,4 +6,6 @@
     <string name="title2">Assassin\'s Creed III</string>
     <string name="title3">Hitman Absolution</string>
     <string name="title4">Dishonored</string>
+    <string name="Romove_fav">Удалено из избранного!</string>
+    <string name="Add_to_fav">Добавлено в избранное!</string>
 </resources>

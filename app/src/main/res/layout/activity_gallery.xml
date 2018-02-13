@@ -8,6 +8,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:background="@color/colorPrimary"
     tools:context="com.example.timteam.youwillwin.GalleryActivity">
 
     <android.support.v7.widget.RecyclerView

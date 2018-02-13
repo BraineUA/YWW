@@ -11,6 +11,9 @@
       android:id="@+id/relativeLayout2">
       <CalendarView
           android:id="@+id/Calendar"
+          android:theme="@style/CalenderViewCustom"
+          android:dateTextAppearance="@style/CalenderViewDateCustomText"
+          android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
           android:layout_width="match_parent"
           android:layout_height="295dp"
           android:layout_alignParentLeft="true"
@@ -23,13 +26,13 @@
   </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
         android:layout_below="@+id/relativeLayout2"
         android:layout_centerHorizontal="true">
 
         <ImageView
-            android:id="@+id/CalendarImage"
+            android:id="@+id/imageViewcal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
@@ -39,13 +42,13 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@+id/CalendarImage"
+            android:layout_below="@+id/imageViewcal"
             android:layout_marginTop="30dp">
 
             <com.like.LikeButton
                 app:icon_type="heart"
                 app:icon_size="45dp"
-                app:liked="false"
+                app:liked="true"
                 android:id="@+id/star_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
